@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>miharu-portfolio</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="phone.css" type="text/css" media="screen and (max-width: 768px)"> 
+</head>
+
+
+<body>
+                
+               <div class="header">aaa</div>
+  <div id="navArea">
+
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="https://miharu828.github.io/portfolio">Home</a></li>
+            <li><a href="https://miharu828.github.io/aboutme">About me</a></li>
+            <li><a href="https://forms.gle/mNe7YEpvZTFtHFwc9">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+     
+      
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <div id="mask"></div>
+      
+
+    <header>CONTACT FORM</header>
+
+    <form id="form" class="topBefore">
+            
+              <input id="name" type="text" placeholder="NAME">
+              <input id="email" type="text" placeholder="E-MAIL">
+              <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+      <input id="submit" type="submit" value="GO!">
+      
+    </form>
+
+<footer class="footer">
+    
+  </footer>
+
+
+
+<script>
+  (function($) {
+var $nav   = $('#navArea');
+var $btn   = $('.toggle_btn');
+var $mask  = $('#mask');
+var open   = 'open'; // class
+// menu open close
+$btn.on( 'click', function() {
+if ( ! $nav.hasClass( open ) ) {
+$nav.addClass( open );
+} else {
+$nav.removeClass( open );
+}
+});
+// mask close
+$mask.on('click', function() {
+$nav.removeClass( open );
+});
+} )(jQuery);
+</script>
+
+</body>
+
+
+</html>
